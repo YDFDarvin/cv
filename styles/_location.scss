@@ -1,0 +1,26 @@
+
+@at-root .location {
+  display: flex;
+  flex-wrap: wrap;
+  
+  &__title {
+    order: 0;
+  }
+  &__description {
+    order: 1;
+    font-style: italic;
+    color: #{$secondary};
+    &::before {
+      content: "\A0/* "
+    }
+    &::after {
+      content: " */\A0"
+    }
+  }
+  &__city {
+    order: 3;
+    &::before {
+      content: "@"
+    }
+  }
+}

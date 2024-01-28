@@ -1,0 +1,32 @@
+& {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media print, (min-width: #{$desktop}) {
+    display: grid;
+    column-gap: #{$padding-big};
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'topb topb'
+      'links links'
+      'delimiter delimiter'
+      'objectives objectives'
+      'experience competences'
+      'experience projects'
+      'experience certifications'
+      'experience education'
+      'languages languages'
+    ;  
+  }
+  
+  &__links          { order: 1; grid-area: links; }
+  &__delimiter      { order: 2; grid-area: delimiter; }
+  &__objectives     { order: 3; grid-area: objectives; }
+  &__competences    { order: 4; grid-area: competences; }
+  &__projects       { order: 5; grid-area: projects; }
+  &__experience     { order: 6; grid-area: experience; }
+  &__certifications { order: 7; grid-area: certifications; }
+  &__education      { order: 8; grid-area: education; }
+  &__languages      { order: 9; grid-area: languages; } 
+}

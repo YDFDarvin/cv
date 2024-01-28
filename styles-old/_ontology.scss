@@ -1,0 +1,204 @@
+// TODO generate
+$term--XP: "XP";
+$term--TDD: "TDD";
+$term--Coverage: "Coverage";
+$term--SOLID: "SOLID";
+$term--DRY: "DRY";
+$term--KISS: "KISS";
+$term--YAGNI: "YAGNI";
+$term--semver: "semver";
+
+$term--Reactive: "Reactive";
+$term--Functional: "Functional";
+$term--Contract: "Contract";
+$term--PrototypeOriented: "PrototypeOriented";
+$term--ClassOriented: "ClassOriented";
+
+$term--JsonSchema: "JsonSchema";
+$term--TypeScript: "TypeScript";
+$term--JSDoc: "JSDoc";
+$term--JsonHyper: "JsonHyper";
+$term--OpenAPI: "OpenAPI";
+
+$term--Jest: "Jest";
+$term--Cypress: "Cypress";
+$term--Puppeteer: "Puppeteer";
+
+$term--Html5: "Html5";
+$term--svg: "svg";
+$term--WebComponents: "WebComponents";
+$term--JS_DOM: "JS_DOM";
+$term--jQuery: "jQuery";
+$term--canvas: "canvas";
+$term--pixi_js: "pixi_js";
+$term--cytoscape_js: "cytoscape_js";
+$term--charts_js: "charts_js";
+$term--d3_js: "d3_js";
+
+$term--CSS: "CSS";
+$term--CSS3: "CSS3";
+$term--PureCss: "PureCss";
+$term--SASS: "SASS";
+$term--PostCSS: "PostCSS";
+$term--BEM: "BEM";
+$term--AtomicCSS: "AtomicCSS";
+
+$term--MySQL: "MySQL";
+$term--MongoDB: "MongoDB";
+
+$term--JS: "JS";
+$term--Node_js: "Node_js";
+$term--Fetch: "Fetch";
+$term--axios_js: "axios_js";
+$term--Ajax: "Ajax";
+
+$term--React: "React";
+$term--Redux: "Redux";
+$term--RxJs: "RxJs";
+$term--Webpack: "Webpack";
+$term--Babel: "Babel";
+$term--Next_js: "Next_js";
+$term--CRA: "CRA";
+$term--nwjs: "nwjs";
+
+$term--Monolith: "Monolith";
+$term--SOAP: "SOAP";
+$term--RESTful: "RESTful";
+$term--Microservices: "Microservices";
+$term--MVC: "MVC";
+$term--MVP: "MVP";
+
+$term--eslint: "eslint";
+$term--stylelint: "stylelint";
+$term--vscode: "vscode";
+$term--git_hooks: "git_hooks";
+$term--git_config: "git_config";
+
+$term--Node_http: "Node_http";
+$term--ExpressJs: "ExpressJs";
+$term--Apache: "Apache";
+$term--nginx: "nginx";
+$term--jwt: "jwt";
+$term--CORS: "CORS";
+$term--CSP: "CSP"; //Content Security Policy
+
+$term--Docker: "Docker";
+
+$term--bash: "bash";
+$term--git: "git";
+$term--GitLab_CI: "GitLab_CI";
+$term--Jenkins: "Jenkins";
+$term--GitHub_Actions: "GitHub_Actions";
+$term--HockeyApp: "HockeyApp";
+
+$term--C: "C";
+$term--Cpp: "Cpp";
+$term--OpenCV: "OpenCV";
+$term--OpenMPI: "OpenMPI";
+$term--PHP: "PHP";
+$term--WordPress: "WordPress";
+$term--Python: "Python";
+$term--Haxe: "Haxe";
+
+$terms: (
+  $term--XP,
+  $term--TDD,
+  $term--Coverage,
+  $term--SOLID,
+  $term--DRY,
+  $term--KISS,
+  $term--YAGNI,
+  $term--semver,
+
+  $term--Reactive,
+  $term--Functional,
+  $term--Contract,
+  $term--PrototypeOriented,
+  $term--ClassOriented,
+  
+  $term--JsonSchema,
+  $term--TypeScript,
+  $term--JSDoc,
+  $term--JsonHyper,
+  $term--OpenAPI,
+  
+  $term--Jest,
+  $term--Cypress,
+  $term--Puppeteer,
+  
+  $term--Html5,
+  $term--svg,
+  $term--WebComponents,
+  $term--JS_DOM,
+  $term--jQuery,
+  $term--canvas,
+  $term--pixi_js,
+  $term--cytoscape_js,
+  $term--charts_js,
+  $term--d3_js,
+  
+  $term--CSS,
+  $term--CSS3,
+  $term--PureCss,
+  $term--SASS,
+  $term--PostCSS,
+  $term--BEM,
+  $term--AtomicCSS,
+  
+  $term--MySQL,
+  $term--MongoDB,
+  
+  $term--JS,
+  $term--Node_js,
+  $term--Fetch,
+  $term--axios_js,
+  $term--Ajax,
+  
+  $term--React,
+  $term--Redux,
+  $term--RxJs,
+  $term--Webpack,
+  $term--Babel,
+  $term--Next_js,
+  $term--CRA,
+  $term--nwjs,
+  
+  $term--Monolith,
+  $term--SOAP,
+  $term--RESTful,
+  $term--Microservices,
+  $term--MVC,
+  $term--MVP,
+  
+  $term--eslint,
+  $term--stylelint,
+  $term--vscode,
+  $term--git_hooks,
+  $term--git_config,
+  
+  $term--Node_http,
+  $term--ExpressJs,
+  $term--Apache,
+  $term--nginx,
+  $term--jwt,
+  $term--CORS,
+  $term--CSP,
+  
+  $term--Docker,
+  
+  $term--bash,
+  $term--git,
+  $term--GitLab_CI,
+  $term--Jenkins,
+  $term--GitHub_Actions,
+  $term--HockeyApp,
+  
+  $term--C,
+  $term--Cpp,
+  $term--OpenCV,
+  $term--OpenMPI,
+  $term--PHP,
+  $term--WordPress,
+  $term--Python,
+  $term--Haxe
+);

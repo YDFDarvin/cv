@@ -1,0 +1,50 @@
+@mixin content-apply($key, $value) {
+  @include content-key($key);
+  @include content-value($value);
+}
+@mixin content-key($content: null) {
+  &::before {
+    @if $content != null {
+      content: $content;
+    }
+    @content;
+  }
+}
+@mixin content-value($content: null) {
+  &::after {
+    @if $content != null {
+      content: $content;
+    }
+    @content;
+  }
+}
+
+@mixin goal-content($content) {
+  display: list-item;
+  @include content-key($content) {
+    @content;
+  };
+}
+
+@mixin content-image($url) {
+  @include content-key("") {
+    background-image: if($url == null, none, url($url));
+    @content;
+  }  
+}
+
+@mixin array-terms($arr...) {
+  $i: 0;
+  @each $word in $arr {
+    &#{$i} { @extend %Term--#{$word}; }
+    $i: $i + 1;
+  }
+}
+
+@mixin array-goals($arr...) {
+  $i: 0;
+  @each $word in $arr {
+    &#{$i} { @include goal-content($word); }
+    $i: $i + 1;
+  }
+}

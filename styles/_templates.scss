@@ -1,0 +1,68 @@
+@at-root %link-anchor {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+  display: list-item;
+  list-style-type: none;
+  scroll-margin-top: #{$padding};
+  // &::marker {}
+  &:hover {
+    list-style-type: "§ "; // § ¶ #
+  }
+  &:target {
+    text-decoration: underline;
+  }
+}
+
+@at-root %link-calm {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: #{$primary};
+  }
+}
+
+@at-root %link-external {
+  color: #{$primary};
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@at-root %comma-separation {
+  & > :not(:last-child) {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: ",";
+    }
+  }
+}
+
+@at-root %list-reset {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@at-root %list-big {
+  padding-left: #{$padding};
+  @extend %list-reset;
+}
+
+@at-root %list-mid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  @extend %list-reset
+    , %comma-separation
+  ;
+}
+
+@at-root %list-small {
+  @include typography.typography("subtitle2");
+  @extend %list-mid;
+}

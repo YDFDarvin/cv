@@ -1,0 +1,488 @@
+@import "utils"
+, "ontology"
+, "quarks"
+;
+
+$terms-most: (
+  $term--XP,
+  $term--TDD,
+  $term--Coverage,
+  $term--SOLID,
+  $term--DRY,
+  $term--KISS,
+  $term--YAGNI,
+  $term--semver,
+  $term--Reactive,
+  $term--Functional,
+  $term--PrototypeOriented,
+  $term--RESTful,
+  $term--Microservices,
+  $term--MVC,
+  $term--Contract,
+  $term--JsonSchema,
+  $term--TypeScript,
+  $term--bash,
+  $term--git_hooks,
+  $term--git_config,
+  $term--Jest,
+  $term--Cypress,
+  $term--Puppeteer,
+  $term--Html5,
+  $term--CSS3,
+  $term--PureCss,
+  $term--SASS,
+  $term--BEM,
+  $term--AtomicCSS,
+  $term--MySQL,
+  $term--MongoDB,
+  $term--JS,
+  $term--ExpressJs,
+  $term--Node_js,
+  $term--Ajax,
+  $term--React,
+  $term--Redux,
+  $term--RxJs,
+  $term--Next_js,
+  $term--eslint,
+  $term--stylelint,
+);
+$terms-high: (
+  $term--git,
+  $term--ClassOriented,
+  $term--JSDoc,
+  $term--JsonHyper,
+
+  $term--svg,
+  $term--JS_DOM,
+  $term--canvas,
+
+  $term--Fetch,
+
+  $term--CSS,
+  $term--PostCSS,
+  $term--axios_js,
+  $term--Webpack,
+  $term--Babel,
+
+  $term--Node_http
+  $term--CORS,
+  $term--CSP,
+  $term--vscode
+);
+$terms-mid: (
+  $term--jQuery,
+  $term--OpenAPI,
+  $term--WebComponents,
+  $term--cytoscape_js,
+  $term--charts_js,
+  $term--d3_js,
+  $term--CRA,
+  $term--Monolith,
+  $term--SOAP,
+  $term--MVP,
+  $term--Apache,
+  $term--jwt,
+  $term--GitLab_CI,
+  $term--C,
+  $term--Cpp,
+  $term--OpenCV,
+  $term--OpenMPI,
+  $term--Python
+);
+$terms-low: (
+  $term--pixi_js,
+  $term--nwjs,
+  $term--nginx,
+  $term--Docker,
+  $term--Jenkins,
+  $term--GitHub_Actions,
+  $term--HockeyApp,
+  $term--Haxe
+);
+
+$terms-hate: (
+  $term--PHP,
+  $term--WordPress,
+  $term--Monolith
+);
+
+$font-bold: 600;
+
+%Term__padding {
+  padding: {
+    left: 0.25rem;
+    right: 0.25rem;
+  }
+}
+
+.links-- {
+  &residence {
+    pointer-events: none;
+    color: inherit;
+  }
+  &residence {
+    @include content-key("🇮🇱") {
+      padding-left: 0;
+    }
+  }
+  &residence { @include content-value("Netanya.Israel");}
+  &github { @include content-value("github.com/askirmas");}
+  &linkedin { @include content-value("linkedin.com/in/kirmas");}
+  &skype { @include content-value("skype:askirmas");}
+}
+
+.Objectives { @include content-value("Passionate for systematic and iterative procedures. High educability and deep knowledge of computer science makes me efficient in engineering and architecture that provides a logical flow of knowledge and progress.");}
+
+.Human_Languages-- {
+  &English { @include content-value("Fluent");}
+  &Hebrew { @include content-value("Basic");}
+  &Ukrainian { @include content-value("Mother tongue");}
+  &Russian { @include content-value("Mother tongue");}
+  &JS { @include content-value("Native");}
+}
+
+.Core_Skills__Term {
+  display: none;
+}
+
+.Experience {
+  $root: #{&};
+
+  @at-root y2020 {
+    $year: #{&};
+    @at-root #{$root} {
+      &--#{$year} {
+        @include content-apply(
+          "2019 - 2020 Senior Fullstack Engineer",
+          "Cloudwize.io /*Cloud Management*/ @Netanya.Israel"
+        );
+      }
+      &__Goal--#{$year}- {
+        @include array-goals(
+          "Implemented IDE-like website",
+          "Customers portal (full-stack)",
+          "Created styling system for the company",
+          "Built company’s internal infrastructure",
+          "Updated repositories structure for better usability"
+        );
+      }
+    }
+  }
+
+  @at-root y2019 {
+    $year: #{&};
+    @at-root #{$root} {
+      &--#{$year} {
+        @include content-apply(
+          "2018 - 2019 Lead Software Engineer",
+          "Go-Be Marketing Ltd /*Sales Company*/ @Tel-Aviv.Israel"
+        );
+      }
+      &__Goal--#{$year}- {
+        @include array-goals(
+          "Communicating with outsources, supports, consulting affiliates",
+          "Support and fast solving common operational issues",
+          "Continuous deployment",
+          "Software integrations with delegated configurations",
+          "Legacy code solving",
+          "Built websites and landing pages"
+        );
+      }
+    }
+  }
+
+  @at-root y2017 {
+    $year: #{&};
+    @at-root #{$root} {
+      &--#{$year} {
+        @include content-apply(
+          "2015 - 2017 Software Engineer",
+          "Intetics Inc @Kharkiv.Ukraine, Area9 @Copenhagen.Denmark"
+        );
+      }
+      &__Goal--#{$year}- {
+        @include array-goals(
+          "Web client for media viewing with mobile optimizations",
+          "Extended Compiler, Type system, Running platform and Build system of Proprietary programming language",
+          "Backend service for PDF resources conversion and storage",
+          "Implemented algorithm of specifications learning from examples for Programming by example system"
+        );
+      }
+    }
+  }
+
+  @at-root y2015 {
+    $year: #{&};
+    @at-root #{$root} {
+      &--#{$year} {
+        @include content-apply(
+          "2014 - 2015 Freelance Developer",
+          "Eikoncraft /*Software service company*/ @Dallas.USA"
+        );
+      }
+      &__Goal--#{$year}- {
+        @include array-goals(
+          "Created internal timelog system"
+        );
+      }
+    }
+  }
+
+  @at-root y2014 {
+    $year: #{&};
+    @at-root #{$root} {
+      &--#{$year} {
+        @include content-apply(
+          "2008 - 2014 Co-Founder, Branch Manager",
+          "New Educational Initiatives Llc ​/*eLearning company*/ @Moscow.Russia"
+        );
+      }
+      &__Goal--#{$year}- {
+        @include array-goals(
+          "Managing branch, hiring, and training staff",
+          "eLearning production",
+          "Researched automation of video and text processing"
+        );
+      }
+    }
+  }
+}
+
+.Education {
+  $root: #{&};
+  @at-root y2014 {
+    $year: #{&};
+    @at-root #{$root} {
+      &--#{$year} {
+        @include content-apply(
+          "2012 - 2014 Master of Computer Science",
+          "Institute of Cybernetics @Kyiv.Ukraine. Institute of Physics and Technology @Moscow.Russia"
+        );
+      }
+      &__Goal--#{$year}- {
+        &0 { @include goal-content("Information fluctuation complexity"); }
+        &1 { @include goal-content("Neural networks"); }
+        &2 { @include goal-content("Software Engineering") {
+          font-weight: #{$font-bold};
+        } }
+        &3 { @include goal-content("System Engineering") {
+          font-weight: #{$font-bold};
+        } }
+      }
+    }
+  }
+
+  @at-root y2012 {
+    $year: #{&};
+    @at-root #{$root} {
+      &--#{$year} {
+        @include content-apply(
+          "2006 - 2012 Bachelor of Applied Mathematics",
+          "Institute of Physics and Technology @Moscow.Russia"
+        );
+      }
+      &__Goal--#{$year}- {
+        &0 { @include goal-content("Algorithms and calculus methods, Computational complexity, Data structures"); }
+        &1 { @include goal-content("Databases"); }
+        &2 { @include goal-content("Mathematical analysis and statistics"); }
+        &3 { @include goal-content("Mathematical optimization"); }
+        &4 { @include goal-content("Parallel programming"); }
+        &5 { @include goal-content("Programming language theory") {
+          font-weight: #{$font-bold};
+        } }
+      }
+    }
+  }
+
+  @at-root y2006 {
+    $year: #{&};
+    @at-root #{$root} {
+      &--#{$year} {
+        @include content-apply(
+          "1996 - 2006 Awardee of international and republic Math olympiads",
+          "Physics and Mathematics Lyceum #27 @Kharkiv.Ukraine"
+        );
+      }
+      &__Goal--#{$year}- {
+        &0 { @include goal-content("Boolean algebra") {
+          font-weight: #{$font-bold};
+        } }
+        &1 { @include goal-content("Discrete mathematics") {
+          font-weight: #{$font-bold};
+        } }
+        &2 { @include goal-content("Geometry");
+          font-weight: #{$font-bold};
+        }
+        &3 { @include goal-content("Probability theory"); }
+      }
+    }
+  }
+}
+
+.Goal {
+  order: #{$order-1-4};
+}
+
+Term {
+  $entity: #{&};
+  @at-root .#{$entity}-- {
+    &Engineer {
+      @include content-key("Engineer");
+    }
+  }
+
+  @at-root %#{$entity}-- {
+    $ctx: #{&};
+    @import "content";
+    @extend %Term__padding;
+
+    @each $term in $terms {
+      &#{$term} {
+        @extend #{$ctx};
+      }
+    }
+
+    $i: 0;
+    @each $term in $terms-most {
+      $template: null;
+      &#{$term} {
+        $template: #{&};
+        display: inline-block;
+        text-decoration: underline;
+        order: #{$order-1-0};
+      }
+      @at-root .Core_Skills__#{$entity}-#{$i} {
+        @extend #{$template};
+      }
+      $i: $i + 1;
+    }
+
+    @each $term in $terms-high {
+      &#{$term} {
+        text-decoration: underline;
+        order: #{$order-1-1};
+      }
+    }
+
+    @each $term in $terms-low {
+      &#{$term} {
+        font-style: italic;
+        order: #{$order-1-3};
+      }
+    }
+
+    @each $term in $terms-hate {
+      &#{$term} {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  @at-root .Education__#{$entity}-- {
+    &y2012-{
+      @include array-terms(
+        $term--MySQL,
+        $term--C,
+        $term--Cpp,
+        $term--OpenMPI
+      );
+    }
+  }
+  @at-root .Experience__#{$entity}-- {
+    &y2014- {
+      @include array-terms(
+        $term--Cpp,
+        $term--PHP,
+        $term--MySQL,
+        $term--JS,
+        $term--OpenCV
+      );
+    }
+    &y2015- {
+      @include array-terms(
+        $term--JS,
+        $term--Reactive
+      );
+    }
+    &y2017- {
+      @include array-terms(
+        $term--Reactive,
+        $term--Functional,
+        $term--React,
+        $term--RxJs,
+        $term--TypeScript,
+        $term--JS,
+        $term--Node_js,
+        $term--MySQL,
+        $term--canvas,
+        $term--Apache,
+        $term--PHP,
+        $term--Haxe,
+        $term--Python,
+        $term--nwjs,
+        $term--pixi_js
+      );
+    }
+    &y2019-{
+      @include array-terms(
+        $term--JsonSchema,
+        $term--RESTful,
+        $term--Microservices,
+        $term--git,
+        $term--bash,
+        $term--Html5,
+        $term--Next_js,
+        $term--React,
+        $term--Node_js,
+        $term--ExpressJs,
+        $term--MySQL,
+        $term--MongoDB,
+        $term--Apache,
+        $term--PHP,
+        $term--jQuery,
+        $term--WordPress,
+        $term--CSS,
+        $term--nginx,
+        $term--Monolith
+      );
+    }
+    &y2020- {
+      @include array-terms(
+        $term--JsonSchema,
+        $term--TypeScript,
+        $term--RESTful,
+        $term--bash,
+        $term--git,
+        $term--Node_js,
+        $term--Jest,
+        $term--Cypress,
+        $term--Puppeteer,
+        $term--CSS,
+        $term--SASS,
+        $term--Html5,
+        $term--React,
+        $term--Redux,
+
+        $term--JS_DOM,
+        $term--ExpressJs,
+
+        $term--MySQL,
+        $term--MongoDB,
+
+        $term--Webpack,
+
+        $term--GitLab_CI,
+        $term--Docker
+      );
+    }
+  }
+
+  @at-root .#{$entity}-- {
+    @each $term in $terms {
+      &#{$term} {
+        @extend %#{$entity}--#{$term}
+      }
+    }
+  }
+}
+

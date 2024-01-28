@@ -1,0 +1,91 @@
+@at-root .cv {
+  $block: #{&};
+
+  flex-grow: 1;
+
+  padding: {
+    left: #{$padding-big};
+    right: #{$padding-big};
+  }
+  margin-bottom: #{$padding};
+  
+  @import "layout--main";
+  overflow: {
+    y: overlay;
+    x: hidden;
+  }
+
+  @at-root {
+    @media only screen and (min-width: #{$desktop}) {
+      @at-root #{$block}::before {
+        grid-area: topb;
+        content: "";
+        
+        position: sticky;
+        top: 0;
+
+        height: #{$padding};
+        background-image: linear-gradient(#{$surface}, transparent);
+
+      }
+    }
+  }
+
+  &__delimiter {
+    position: sticky;
+    top: 0;
+    
+    height: #{$padding};
+    width: 100vw;
+  
+    z-index: 1;
+    
+    margin: {
+      left: -#{$padding-big};
+      right: -#{$padding-big};
+    } 
+    padding: {
+      top: #{$padding};
+    }
+    border: none;
+    overflow: hidden;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      width: 100%;
+      height: 100%;
+      background-color: #{$surface};
+      @include elevation.elevation(4);
+    }
+ }
+
+  &__links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__chapter {
+    @include typography.typography("headline5");
+    @extend %link-anchor;
+    margin: {
+      bottom: #{$padding};
+    };
+  }
+
+  // TODO dehardcode
+  &__languages .article__goals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 1.5em;
+    a {
+      @extend %link-external;
+    }
+  }
+}

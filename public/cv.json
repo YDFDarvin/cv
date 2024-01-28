@@ -1,0 +1,585 @@
+{
+  "$schema": "./schema.json",
+  "title": {
+    "en": "Serhii Andrukh",
+    "uk": "Андрій Кірмас",
+    "he": "אנדריי קירמס",
+    "ru": "Андрей Кирмас"
+  },
+  "description": "Senior Full Stack Engineer",
+  "links": {
+    "contacts": {
+      "email": "kirmas@phystech.edu",
+      "phex": {
+        "en": "e2701c48e2",
+        "ru": "128ce03c64",
+        "uk": "58a2d0028f"
+      },
+      "location": {
+        "en": "🇮🇱 Netania",
+        "he": "נתניה 🇮🇱",
+        "uk": "🇺🇦 Харків",
+        "ru": "🇷🇺 Москва"
+      }
+    },
+    "social": {
+      "linkedin": "kirmas",
+      "github": "askirmas",
+      "skype": "askirmas"  
+    },
+    "etc": {
+      "html": {
+        "title": "HTML",
+        "href": {
+          "en": "${homepage}en",
+          "he": "${homepage}he",
+          "uk": "${homepage}uk",
+          "ru": "${homepage}ru"
+        }
+      },
+      "pdf": {
+        "title": "PDF",
+        "href": {
+          "en": "${homepage}${name}-en.pdf",
+          "he": "${homepage}${name}-he.pdf",
+          "uk": "${homepage}${name}-uk.pdf",
+          "ru": "${homepage}${name}-ru.pdf"
+        }
+      },
+      "npm": {
+        "title": "v${version}",
+        "href": "https://www.npmjs.com/package/@kirmas/cv"
+      }
+    }
+  },
+  "items": {
+    "objectives": {
+      "title": {
+        "en": "Objectives",
+        "ru": "О себе"
+      },
+      "description": {
+        "en": "Passionate for systematic and iterative procedures. High educability and deep knowledge of computer science makes me efficient in engineering and architecture that provides a logical flow of knowledge and progress.",
+        "ru": "Приверженность к систематизации и последовательности действий. Высокий уровень обучаемости и глубина знаний позволяют мне быть эффективным в решении инженерных и архитектурных задач."
+      }
+    },  
+    "competences": {
+      "$comment": "Calc from definitions?",
+      "title": {
+        "en": "Competences",
+        "ru": "Навыки"
+      },
+      "subjects": [
+        "XP",
+        "TDD",
+        "Coverage 100%",
+        "SOLID",
+        "DRY",
+        "KISS",
+        "YAGNI",
+        "OOP-PBP",
+        "RESTful",
+        "Design by contract",
+        "Pure-CSS",
+        "BEM"
+      ],
+      "stack": [
+        "JsonSchema",
+        "TypeScript",
+        "bash",
+        "git",
+        "Jest",
+        "Cypress",
+        "MySQL",
+        "MongoDB",
+        "JavaScript",
+        "Node",
+        "ExpressJs",
+        "React",
+        "Next.js",
+        "HTML5",
+        "CSS3",
+        "Sass"
+      ]
+    },
+    "languages": {
+      "title": {
+        "en": "Languages",
+        "ru": "Языки"
+      },
+      "items": [
+        {
+          "title": "English: Fluent",
+          "href": "${homepage}en"
+        },
+        {
+          "title": "Hebrew: Basic",
+          "href": "${homepage}he"
+        },
+        {
+          "title": "Ukrainian: Mother tongue",
+          "href": "${homepage}uk"
+        },
+        {
+          "title": "Russian: Mother tongue",
+          "href": "${homepage}ru"
+        },
+        {
+          "title": "JavaScript: Native speaker",
+          "href": "${homepage}cv.json"
+        }
+      ]
+    }  
+  },  
+  "properties": {
+    "experience": {
+      "title": {
+        "en": "Experience",
+        "ru": "Опыт работы"
+      },
+      "items": {
+        "wormsoft": {
+          "min": 2021,
+          "title": "Lead Back-End Engineer",
+          "locations": [{
+            "title": "Wormsoft Inc.",
+            "city": {
+              "en": "Moscow.Russia",
+              "ru": "Москва.РФ"
+            }
+          }],
+          "items": [
+            "Stabilize and optimize system",
+            "Share competences",
+            "Implemented scheduled tasks service and webpush notifications"
+          ],
+          "stack": [
+            "Node",
+            "TypeScript",
+            "JsonSchema",
+            "OpenAPI",
+            "PostgreSQL",
+            "Jest",
+            "bash",
+            "Docker",
+            "GitLab CI",
+            "typedi",
+            "typeorm"
+          ]
+        },
+        "deutsche-bank": {
+          "min": 2020, "max": 2021,
+          "title": "Senior FrontEnd Engineer",
+          "locations": [{
+            "title": "Deutsche Bank",
+            "city": {
+              "en": "Moscow.Russia",
+              "ru": "Москва.РФ"
+            }
+          }],
+          "items": [
+            "Established and integrated unit and functional autotests to CI pipeline",
+            "Implemented object-oriented diff viewer"
+          ],
+          "stack": [
+            "React",
+            "TypeScript",
+            "Jest",
+            "Cypress",
+            "Next.js",
+            "Sass",
+            "Protobuf"
+          ]
+        },
+        "cloudwize": {
+          "min": 2019, "max": 2020,
+          "title": "Senior Fullstack Engineer",
+          "locations": [{
+            "title": "Cloudwize.io",
+            "description": "Cloud Management",
+            "city": {
+              "en": "Netanya.Israel",
+              "ru": "Нетания.Израиль"
+            }
+          }],
+          "stack": [
+            "JsonSchema",
+            "TypeScript",
+            "RESTful",
+            "bash",
+            "Node",
+            "Jest",
+            "Cypress",
+            "Puppeteer",
+            "Sass",
+            "HTML5",
+            "React",
+            "Redux",
+            "ExpressJs",
+            "MySQL",
+            "MongoDB",
+            "git",
+            "CSS3",
+            "JS DOM",
+            "Webpack",
+            "GitLab CI",
+            "Docker"
+          ],
+          "items": [
+            "Implemented IDE-like graph builder web-tool",
+            "Customers portal (full-stack)",
+            "Created styling system for the company",
+            "Built company’s internal infrastructure",
+            "Updated repositories structure for better usability"
+          ]
+        },
+        "go-be-marketing": {
+          "min": 2018, "max": 2019,
+          "title": "Lead Software Engineer",
+          "locations": [{
+            "title": "Go-Be Marketing Ltd",
+            "description": "ECommerce Company",
+            "city": {
+              "en": "Tel-Aviv.Israel",
+              "ru": "Тель-Авив.Израиль"
+            }
+          }],
+          "stack": [
+            "JsonSchema",
+            "RESTful",
+            "Microservices",
+            "bash",
+            "HTML5",
+            "Next.js",
+            "React",
+            "Node",
+            "ExpressJs",
+            "MySQL",
+            "MongoDB",
+            "git",
+            "CSS3",
+            "Apache",
+            "PHP",
+            "jQuery",
+            "WordPress",
+            "Monolith",
+            "nginx"        
+          ],
+          "items": [
+            "Communications with outsourcers and supports, affiliates consultations. Fast solving internal operational issues",
+            "Built API integration system with delegated configurations",
+            "Legacy code solving",
+            "Built websites and landing pages",
+            "Establish Extreme programming ..., setup CI/CD pipelines"
+          ]
+        },
+        "intetics": {
+          "min": 2015, "max": 2017,
+          "title": "Software Engineer",
+          "locations": [
+            {
+              "title": "Intetics Inc",
+              "description": "Out-staff company",
+              "city": "Kharkiv.Ukraine"
+            },
+            {
+              "title": "Area9",
+              "description": "SaaS company",
+              "city": "Copenhagen.Denmark"
+            }
+          ],
+          "stack":[
+            "Reactive paradigm",
+            "Functional paradigm",
+            "Compilers",
+            "React",
+            "RxJs",
+            "TypeScript",
+            "JavaScript",
+            "Node",
+            "MySQL",
+            "<canvas>",
+            "Apache",
+            "PHP",
+            "Python",
+            "Haxe",
+            "nw.js",
+            "pixi.js"
+          ],
+          "items": [
+            "Web client for media viewing with mobile optimizations",
+            "Extended Compiler, Type system, Running platform and Build system of Proprietary programming language",
+            "Backend service for PDF resources conversion and storage",
+            "Implemented algorithm of specifications learning from examples for Programming by example system"
+          ]
+        },
+        "eikoncraft": {
+          "min": 2014, "max": 2015,
+          "title": "Freelance Developer",
+          "locations": [{
+            "title": "Eikoncraft",
+            "description": "Outsource company",
+            "city": "Dallas.USA"
+          }],
+          "stack": [
+            "JavaScript", "Reactive paradigm"
+          ],
+          "items": [
+            "Created internal timelog system"
+          ]
+        },
+        "nedi": {
+          "min": 2008, "max": 2014,
+          "title": "Co-Founder, Branch Manager",
+          "locations": [{
+            "title": "New Educational Initiatives Llc",
+            "description": "eLearning company",
+            "city": {
+              "en": "Moscow.Russia",
+              "ru": "Москва.РФ"
+            }
+          }],
+          "stack": [
+            "MySQL", "JavaScript", "C++", "PHP", "OpenCV"
+          ],
+          "items": [
+            "Managing branch, hiring, and training staff eLearning production",
+            "Researched automation of video and text processing"
+          ]
+        }
+      }
+    },
+    "projects": {
+      "title": {
+        "en": "Projects",
+        "ru": "Проекты"
+      },
+      "items": {
+        "git-hooks-wrapper": {
+          "title": "git-hooks-wrapper",
+          "description": "Wrapper scripts for Git Hooks",
+          "href": "https://github.com/askirmas/git-hooks-wrapper#readme",
+          "stack": ["bash", "git"]
+        },
+        "postcss-d-ts": {
+          "title": "postcss-d-ts",
+          "description": "PostCSS plugin to generate `.d.ts` of all used CSS classes and ids in imported stylesheets",
+          "href": "https://github.com/askirmas/postcss-d-ts#readme",
+          "stack": ["TypeScript", "Node"]
+        },
+        "react-classnaming": {
+          "title": "react-classnaming",
+          "description": "Tools to establish CSS classes as an explicit abstraction layer and to handle it as an interface between React and CSSStyleDeclaration",
+          "href": "https://github.com/askirmas/react-classnaming#readme",
+          "stack": ["TypeScript", "ES6"]
+        }        
+      }
+    },
+    "education": {
+      "title": {
+        "en": "Education",
+        "ru": "Образование"
+      },
+      "items": {
+        "master": {
+          "min": 2012, "max": 2014,
+          "title": {
+            "en": "Master of Computer Science",
+            "ru": "Магистр прикладной математики"
+          },
+          "locations": [
+            {
+              "title": {
+                "en": "Institute of Cybernetics",
+                "ru": "Институт кибернетики"
+              },
+              "city": {
+                "en": "Kyiv.Ukraine",
+                "ru": "Киев.Украина"
+              }
+            },
+            {
+              "title": {
+                "en": "Institute of Physics and Technology",
+                "ru": "МФТИ"
+              },
+              "city": {
+                "en": "Moscow.Russia",
+                "ru": "Москва.РФ"
+              }
+            }
+          ],
+          "subjects": [
+            "Software and Systems Engineering",
+            "Neural networks"
+          ]
+        }, 
+        "bachelor": {
+          "min": 2006, "max": 2012,
+          "title": {
+            "en": "Bachelor of Applied Mathematics",
+            "ru": "Бакалавр прикладной математики"
+          },
+          "locations":  [{
+            "title": {
+              "en": "Institute of Physics and Technology",
+              "ru": "МФТИ"
+            },
+            "city": {
+              "en": "Moscow.Russia",
+              "ru": "Москва.РФ"
+            }
+          }],
+          "stack": ["MySQL", "C", "C++", "OpenMPI"],
+          "subjects": [
+            "Programming language theory",
+            "Parallel programming",
+            "Databases",
+            "Algorithms and Data structures"
+          ]
+        },
+        "school": {
+          "min": 1996, "max": 2006,
+          "title": {
+            "en": "Awardee of international and republic Math olympiads",
+            "ru": "Победитель международных и республиканских математических олимпиад"
+          },
+          "locations": [{
+            "title": {
+              "en": "Physics and Mathematics Lyceum #27",
+              "ru": "Физико-математический лицей №27"
+            },
+            "city": {
+              "en": "Kharkiv.Ukraine",
+              "ru": "Харьков.Украина"
+            }
+          }],
+          "subjects": [
+            "Discrete mathematics",
+            "Geometry"
+          ]
+        }
+      }  
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": {
+        "freecodecamp-api": {
+          "title": "APIs and Microservices",
+          "locations": [
+            "freecodecamp"
+          ],
+          "href": "https://www.freecodecamp.org/certification/kirmas/apis-and-microservices",
+          "stack": [
+            "ExpressJs",
+            "MongoDB",
+            "Microservices"
+          ]
+        },
+        "freecodecamp-js": {
+          "title": "JavaScript Algorithms and Data Structures",
+          "href": "https://www.freecodecamp.org/certification/kirmas/javascript-algorithms-and-data-structures",
+          "stack": [
+            "ES6"
+          ],
+          "subjects": [
+            "Algorithms and Data structures"
+          ]
+        },
+        "codility-2020-palladium": {
+          "title": "Golden Award for the Palladium 2020 Challenge",
+          "href": "https://app.codility.com/cert/view/cert4N2KDY-EF36VP2Q9KF696XK/",
+          "stack": [
+            "JavaScript"
+          ],
+          "subjects": [
+            "Algorithms and Data structures"
+          ]
+        }
+      }
+    }
+  },
+  "definitions": {
+    "subjects": {
+      "Software and Systems Engineering": {"group": "eng"},
+      "XP": {"group": "eng"},
+      "KISS": {"group": "eng"},
+      "YAGNI": {"group": "eng"},
+      "DRY": {"group": "eng"},
+      "RESTful": {"group": "contracts"},
+      "Design by contract": {"group": "contracts"},
+      "SOLID": {"group": "oop"},
+      "OOP-PBP": {"group": "oop"},      
+      "Coverage 100%": {"group": "test"},
+      "TDD": {"group": "test"},
+      "Databases": {"group": "db"},
+      "BEM": { "group": "css" },
+      "Pure-CSS": { "group": "css" },
+      "Geometry": {"group": "css"},
+      "Programming language theory": {"group": "trpl"},
+      "Neural networks": {"group": "neural"},
+      "Parallel programming": {"group": "parprog"},
+      "Discrete mathematics": {"group": "c"},
+      "Algorithms and Data structures": {"group": "c"}
+    },
+    "stack": {
+      "PHP": {
+        "favor": -1,
+        "group": "server"
+      },
+      "Apache": {
+        "favor": -1,
+        "group": "server"
+      },
+      "WordPress": {
+        "favor": -1,
+        "group": "server"
+      },
+      "Monolith": {
+        "favor": -1,
+        "group": "eng"
+      },
+      "JsonSchema": {"group": "contracts"},
+      "TypeScript": {"group": "contracts"},
+      "OpenAPI": {"group": "contracts"},
+      "Protobuf": {"group": "contracts"},
+      "RESTful": {"group": "contracts"},
+      "C++": {"group": "oop"},
+      "JavaScript": {"group": "oop"},
+      "ES6": {"group": "oop"},
+      "Cypress": {"group": "test"},
+      "Puppeteer": {"group": "test"},
+      "Jest": {"group": "test"},
+      "MySQL": {"group": "db"},
+      "MongoDB": {"group": "db"},
+      "PostgreSQL": {"group": "db"},
+      "typeorm": {"group": "db"},
+      "Node": {"group": "cli"},
+      "bash": {"group": "cli"},
+      "git": {"group": "cli"},
+      "ExpressJs": {"group": "server"},
+      "typedi": {"group": "server"},
+      "nginx": {"group": "server"},
+      "CSS3": {"group": "css"},
+      "Sass": {"group": "css"},
+      "React": {"group": "react"},
+      "Redux": {"group": "react"},
+      "Next.js": {"group": "react"},
+      "Webpack": {"group": "react"},
+      "RxJs": {"group": "react"},
+      "Python": {"group": "trpl"},
+      "Haxe": {"group": "trpl"},
+      "HTML5": {"group": "html"},
+      "<canvas>": {"group": "html"},
+      "pixi.js": {"group": "html"},
+      "jQuery": {"group": "html"},
+      "JS DOM": {"group": "html"},
+      "OpenCV": {"group": "neural"},
+      "OpenMPI": {"group": "parprog"},
+      "C": {"group": "c"},
+      "Compilers": {"group": "trpl"},
+      "GitLab CI": {"group": "devops"},
+      "Docker": {"group": "devops"}
+    }
+  }  
+}
