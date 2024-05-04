@@ -1,0 +1,151 @@
+@import "utils"
+, "ontology"
+, "quarks"
+;
+
+$terms-most: (
+  $term--XP,
+  $term--TDD,
+  $term--Coverage,
+  $term--SOLID,
+  $term--DRY,
+  $term--KISS,
+  $term--YAGNI,
+  $term--semver,
+  $term--Reactive,
+  $term--Functional,
+  $term--PrototypeOriented,
+  $term--RESTful,
+  $term--Microservices,
+  $term--MVC,
+  $term--Contract,
+  $term--JsonSchema,
+  $term--TypeScript,
+  $term--bash,
+  $term--git_hooks,
+  $term--git_config,
+  $term--Jest,
+  $term--Cypress,
+  $term--Puppeteer,
+  $term--Html5,
+  $term--CSS3,
+  $term--PureCss,
+  $term--SASS,
+  $term--BEM,
+  $term--AtomicCSS,
+  $term--MySQL,
+  $term--MongoDB,
+  $term--JS,
+  $term--ExpressJs,
+  $term--Node_js,
+  $term--Ajax,
+  $term--React,
+  $term--Redux,
+  $term--RxJs,
+  $term--Next_js,
+  $term--eslint,
+  $term--stylelint,
+);
+$terms-high: (
+  $term--git,
+  $term--ClassOriented,
+  $term--JSDoc,
+  $term--JsonHyper,
+
+  $term--svg,
+  $term--JS_DOM,
+  $term--canvas,
+
+  $term--Fetch,
+
+  $term--CSS,
+  $term--PostCSS,
+  $term--axios_js,
+  $term--Webpack,
+  $term--Babel,
+
+  $term--Node_http
+  $term--CORS,
+  $term--CSP,
+  $term--vscode
+);
+$terms-mid: (
+  $term--jQuery,
+  $term--OpenAPI,
+  $term--WebComponents,
+  $term--cytoscape_js,
+  $term--charts_js,
+  $term--d3_js,
+  $term--CRA,
+  $term--Monolith,
+  $term--SOAP,
+  $term--MVP,
+  $term--Apache,
+  $term--jwt,
+  $term--GitLab_CI,
+  $term--C,
+  $term--Cpp,
+  $term--OpenCV,
+  $term--OpenMPI,
+  $term--Python
+);
+$terms-low: (
+  $term--pixi_js,
+  $term--nwjs,
+  $term--nginx,
+  $term--Docker,
+  $term--Jenkins,
+  $term--GitHub_Actions,
+  $term--HockeyApp,
+  $term--Haxe
+);
+
+$terms-hate: (
+  $term--PHP,
+  $term--WordPress,
+  $term--Monolith
+);
+
+$font-bold: 600;
+
+%Term__padding {
+  padding: {
+    left: 0.25rem;
+    right: 0.25rem;
+  }
+}
+
+.links-- {
+  &residence {
+    pointer-events: none;
+    color: inherit;
+  }
+  &residence {
+    @include content-key("🇮🇱") {
+      padding-left: 0;
+    }
+  }
+  &residence { @include content-value("Poznan.Poland");}
+  &github { @include content-value("https://github.com/YDFDarvin");}
+  &linkedin { @include content-value("https://www.linkedin.com/in/serhii-andrukh/");}
+}
+
+.Objectives { @include content-value("Passionate for systematic and iterative procedures. High educability and deep knowledge of computer science makes me efficient in engineering and architecture that provides a logical flow of knowledge and progress.");}
+
+.Human_Languages-- {
+  &English { @include content-value("Fluent");}
+  &Polish { @include content-value("Basic");}
+  &Ukrainian { @include content-value("Mother tongue");}
+  &Russian { @include content-value("Mother tongue");}
+  &JS { @include content-value("Native");}
+}
+
+.Core_Skills__Term {
+  display: none;
+}
+
+.Goal {
+  order: #{$order-1-4};
+}
+
+

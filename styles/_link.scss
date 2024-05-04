@@ -1,0 +1,60 @@
+@at-root .link {
+  @extend %link-calm;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  height: $icon-size;
+  overflow: hidden;
+  justify-content: center;
+  margin: #{$gap};
+
+  @include content-key {
+    width: $icon-size;
+    height: $icon-size;
+    line-height: $icon-size;
+    display: inline-block;
+
+    background: {
+      position: left center;
+      repeat: no-repeat;
+      size: contain;
+    }
+    margin-right: $icon-margin;
+  }
+
+  &--email {
+    @include content-image("https://github.com/YDFDarvin/cv/images/email.svg");
+  }
+  &--phone {
+    @include content-image("https://github.com/YDFDarvin/images/phone.svg") {
+      margin-right: 0;
+    };
+    @include content-value(attr(data-content));
+  }
+  &--linkedin {
+    @include content-image("https://github.com/YDFDarvin/images/linkedin.svg");
+  }
+  &--skype {
+    @include content-image("https://github.com/YDFDarvin/images/skype.svg");
+  }
+  &--pdf {
+    @include content-image("https://github.com/YDFDarvin/images/pdf.svg");
+  }
+  &--html {
+    @include content-image("https://github.com/YDFDarvin/images/html5.svg");
+  }  
+  &--location {
+    display: inline-block;
+    pointer-events: none;
+    &::first-letter {
+      font-size: #{$icon-size};
+    }
+  }
+  &--github {
+    @include content-image("https://github.com/YDFDarvin/images/github.svg")
+  }
+  &--npm {
+    @include content-image("https://github.com/YDFDarvin/images/npm.svg")
+  }
+}

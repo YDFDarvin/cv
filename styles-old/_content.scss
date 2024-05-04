@@ -1,0 +1,100 @@
+&#{$term--XP} { @include content-key("XP");}
+&#{$term--TDD} { @include content-key("TDD");}
+&#{$term--Coverage} { @include content-key("Coverage 100%");}
+&#{$term--SOLID} { @include content-key("SOLID");}
+&#{$term--DRY} { @include content-key("DRY");}
+&#{$term--KISS} { @include content-key("KISS");}
+&#{$term--YAGNI} { @include content-key("YAGNI");}
+&#{$term--semver} { @include content-key("semver");}
+
+&#{$term--Reactive} { @include content-key("Reactive");}
+&#{$term--Functional} { @include content-key("Functional");}
+&#{$term--Contract} { @include content-key("Contract");}
+&#{$term--PrototypeOriented} { @include content-key("OOP-PBP");}
+&#{$term--ClassOriented} { @include content-key("OOP-class");}
+
+&#{$term--JsonSchema} { @include content-key("JsonSchema");}
+&#{$term--TypeScript} { @include content-key("TypeScript");}
+&#{$term--JSDoc} { @include content-key("JSDoc");}
+&#{$term--JsonHyper} { @include content-key("JsonHyperSchema");}
+&#{$term--OpenAPI} { @include content-key("OpenAPI");}
+
+&#{$term--Jest} { @include content-key("Jest");}
+&#{$term--Cypress} { @include content-key("Cypress");}
+&#{$term--Puppeteer} { @include content-key("Puppeteer");}
+
+&#{$term--Html5} { @include content-key("Html5");}
+&#{$term--svg} { @include content-key("SVG");}
+&#{$term--WebComponents} { @include content-key("WebComponents");}
+&#{$term--JS_DOM} { @include content-key("JS DOM");}
+&#{$term--jQuery} { @include content-key("jQuery");}
+&#{$term--canvas} { @include content-key("<canvas>");}
+&#{$term--pixi_js} { @include content-key("pixi.js");}
+&#{$term--cytoscape_js} { @include content-key("cytoscape.js");}
+&#{$term--charts_js} { @include content-key("charts.js");}
+&#{$term--d3_js} { @include content-key("d3.js");}
+
+&#{$term--CSS} { @include content-key("CSS");}
+&#{$term--CSS3} { @include content-key("CSS3");}
+&#{$term--PureCss} { @include content-key("PureCss");}
+&#{$term--SASS} { @include content-key("Sass");}
+&#{$term--PostCSS} { @include content-key("PostCSS");}
+&#{$term--BEM} { @include content-key("BEM");}
+&#{$term--AtomicCSS} { @include content-key("AtomicCSS");}
+
+&#{$term--MySQL} { @include content-key("MySQL");}
+&#{$term--MongoDB} { @include content-key("MongoDB");}
+
+&#{$term--JS} { @include content-key("JavaScript");}
+&#{$term--Node_js} { @include content-key("Node");}
+&#{$term--Fetch} { @include content-key("FetchAPI");}
+&#{$term--axios_js} { @include content-key("axios.js");}
+&#{$term--Ajax} { @include content-key("AJAX");}
+
+&#{$term--React} { @include content-key("React");}
+&#{$term--Redux} { @include content-key("Redux");}
+&#{$term--RxJs} { @include content-key("RxJs");}
+&#{$term--Webpack} { @include content-key("Webpack");}
+&#{$term--Babel} { @include content-key("Babel");}
+&#{$term--Next_js} { @include content-key("Next.js");}
+&#{$term--CRA} { @include content-key("CRA");}
+&#{$term--nwjs} { @include content-key("nw.js");}
+
+&#{$term--Monolith} { @include content-key("Monolith");}
+&#{$term--SOAP} { @include content-key("SOAP");}
+&#{$term--RESTful} { @include content-key("RESTful");}
+&#{$term--Microservices} { @include content-key("Microservices");}
+&#{$term--MVC} { @include content-key("MVC");}
+&#{$term--MVP} { @include content-key("MVP");}
+
+&#{$term--eslint} { @include content-key("eslint");}
+&#{$term--stylelint} { @include content-key("stylelint");}
+&#{$term--vscode} { @include content-key("VSCode");}
+&#{$term--git_hooks} { @include content-key("git hooks");}
+&#{$term--git_config} { @include content-key("git config");}
+
+&#{$term--Node_http} { @include content-key("Node.http");}
+&#{$term--ExpressJs} { @include content-key("ExpressJs");}
+&#{$term--Apache} { @include content-key("Apache");}
+&#{$term--nginx} { @include content-key("nginx");}
+&#{$term--jwt} { @include content-key("jwt");}
+&#{$term--CORS} { @include content-key("CORS");}
+&#{$term--CSP} { @include content-key("CSP");}
+
+&#{$term--Docker} { @include content-key("Docker");}
+
+&#{$term--bash} { @include content-key("bash");}
+&#{$term--git} { @include content-key("git utils");}
+&#{$term--GitLab_CI} { @include content-key("GitLab CI");}
+&#{$term--Jenkins} { @include content-key("Jenkins");}
+&#{$term--GitHub_Actions} { @include content-key("GitHub Actions");}
+&#{$term--HockeyApp} { @include content-key("HockeyApp");}
+
+&#{$term--C} { @include content-key("C");}
+&#{$term--Cpp} { @include content-key("C++");}
+&#{$term--OpenCV} { @include content-key("OpenCV");}
+&#{$term--OpenMPI} { @include content-key("OpenMPI");}
+&#{$term--PHP} { @include content-key("PHP");}
+&#{$term--WordPress} { @include content-key("WordPress");}
+&#{$term--Python} { @include content-key("Python");}
+&#{$term--Haxe} { @include content-key("Haxe");}

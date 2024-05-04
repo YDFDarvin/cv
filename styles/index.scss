@@ -1,0 +1,20 @@
+@use "@material/typography";
+@use "@material/elevation";
+
+:root {
+  @include typography.typography("body1");
+  font-size: 14px;
+}
+
+@import "../styles-old/quarks"
+, "../styles-old/utils"
+, "next"
+, "templates"
+, "cv"
+, "header"
+, "links_group"
+, "link"
+, "term"
+, "article"
+, "location"
+;

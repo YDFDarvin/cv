@@ -1,0 +1,25 @@
+@at-root .term {
+  cursor: crosshair;
+  border-radius: #{$radius-big};
+
+  border-right: #{$radius-shift} solid transparent;
+  background-clip: border-box;
+  padding-left: #{$radius-shift};
+  margin: {
+    left: -#{$radius-shift};
+    right: #{$gap};
+  }
+
+  &--deprecated {
+    cursor: not-allowed;
+    text-decoration: line-through;
+  }
+
+  &._hover {
+    color: initial;
+    background-color: #{$primary-alpha};
+    &::after {
+      display: none;
+    }  
+  }
+}

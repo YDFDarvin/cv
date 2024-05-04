@@ -1,0 +1,219 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["properties", "definitions"],
+  "properties": {
+    "$schema": {},
+    "title": {"$ref": "#/definitions/Langing"},
+    "description": {"$ref": "#/definitions/Langing"},
+    "links": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {"$ref": "#/definitions/Leaf"}
+      }
+    },
+    "properties": {
+      "additionalProperties": {"$ref": "#/definitions/Section"}
+    },
+    "items": {
+      "additionalProperties": {"$ref": "#/definitions/Article"}
+    },
+    "definitions": {
+      "required": ["subjects", "stack"],
+      "properties": {
+        "subjects": {
+          "type": "object",
+          "propertyNames": {"$ref": "#/definitions/subjectNames"},
+          "additionalProperties": {"$ref": "#/definitions/Term"}
+        },
+        "stack": {
+          "type": "object",
+          "propertyNames": {"$ref": "#/definitions/stackNames"},
+          "additionalProperties": {"$ref": "#/definitions/Term"}
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Section": {
+      "title": "Section",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": {"$ref": "#/definitions/Langing"},
+        "items": {
+          "type": "object",
+          "additionalProperties": {"$ref": "#/definitions/Article"}
+        }
+      }
+    },
+    "Article":  {
+      "title": "Article",
+      "type": "object",
+      "required": ["title"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {"$ref": "#/definitions/Langing"},
+        "description": {"$ref": "#/definitions/Langing"},
+        "$comment": {"type": "string"},
+        "href": {"type": "string"},
+
+        "min": {"type": "number"},
+        "max": {"type": "number"},
+
+        "locations": {
+          "type": "array",
+          "items": {
+            "additionalProperties": false,
+            "required": ["title"],
+            "properties": {
+              "title": {"$ref": "#/definitions/Langing"},
+              "description": {"type": "string"},
+              "city": {"$ref": "#/definitions/Langing"}  
+            }
+          }
+        },
+
+        "subjects": {"$ref": "#/definitions/Subjects"},
+        "stack": {"$ref": "#/definitions/Stack"},
+        "items": {"type": "array", "items": {"$ref": "#/definitions/Leaf"}}
+      }
+    },
+    "Leaf": {
+      "oneOf": [
+        {"$ref": "#/definitions/Langing"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["title", "href"],
+          "properties": {
+            "title": {"$ref": "#/definitions/Langing"},
+            "href": {"$ref": "#/definitions/Langing"}
+          }    
+        }
+      ]
+    },
+    "Langing": {
+      "type": ["string", "object"],
+      "propertyNames": {"enum": ["en", "uk", "pl", "ru"]},
+      "required": ["en"],
+      "additionalProperties": {"type": "string"},
+      "examples": [
+        {"en": "…"}
+      ]
+    },
+    "Term": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "group": {"enum": [
+          "eng",
+          "contracts", "oop", "test",
+          "trpl", "neural", "parprog", "c",
+          "db", "server", "cli", "devops",
+          "css", "html", "react"
+        ]},
+        "favor": {"type": "number"}
+      }
+    },    
+    "Subjects": {
+      "title": "Subjects",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/definitions/subjectNames"}  
+    },
+    "Stack": {
+      "title": "Stack",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/definitions/stackNames"}
+    },
+    "subjectNames": {
+      "enum": [
+        "XP",
+        "TDD",
+        "Coverage 100%",
+        "SOLID",
+        "DRY",
+        "KISS",
+        "YAGNI",
+        "OOP-PBP",
+        "RESTful",
+        "Microservices",
+        "MVC",
+        "Design by contract",
+        "Pure-CSS",
+        "BEM",
+        "Software and Systems Engineering",
+        "Information fluctuation complexity",
+        "Neural networks",
+        "Programming language theory",
+        "Parallel programming",
+        "Databases",
+        "Mathematical analysis and statistics",
+        "Mathematical optimization",
+        "Computational complexity",
+        "Algorithms and Data structures",
+        "Algorithms and calculus methods",
+        "Boolean algebra",
+        "Discrete mathematics",
+        "Geometry",
+        "Probability theory"
+      ]
+    },
+    "stackNames": {
+      "enum": [
+        "JsonSchema",
+        "TypeScript",
+        "OpenAPI",
+        "Protobuf",
+        "RESTful",
+        "bash",
+        "Node",
+        "Jest",
+        "Cypress",
+        "Puppeteer",
+        "Sass",
+        "HTML5",
+        "React",
+        "Redux",
+        "ExpressJs",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "git",
+        "CSS3",
+        "JS DOM",
+        "Webpack",
+        "GitLab CI",
+        "Docker",
+        "Reactive paradigm",
+        "Functional paradigm",
+        "Compilers",
+        "RxJs",
+        "JavaScript",
+        "<canvas>",
+        "Apache",
+        "PHP",
+        "Python",
+        "Haxe",
+        "nw.js",
+        "pixi.js",
+        "Next.js",
+        "jQuery",
+        "Microservices",
+        "typedi",
+        "typeorm",
+        "WordPress",
+        "Monolith",
+        "nginx",
+        "C++",
+        "OpenCV",
+        "ES6",
+        "OpenMPI",
+        "C"
+      ]      
+    }
+  }
+}

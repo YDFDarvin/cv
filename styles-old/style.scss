@@ -1,0 +1,50 @@
+@import "utils"
+, "theme"
+;
+
+.links-- {
+  &email {
+    @include content-image("https://fonts.gstatic.com/s/i/materialicons/email/v6/24px.svg");
+  }
+  &phone {
+    @include content-image("https://fonts.gstatic.com/s/i/materialicons/smartphone/v7/24px.svg") {
+      margin-right: 0;
+    };
+    & > * {
+      margin: {
+        left: $icon-margin;
+        right: $icon-margin;
+      }
+    }
+  }
+  &linkedin {
+    @include content-image("https://upload.wikimedia.org/wikipedia/commons/8/80/LinkedIn_Logo_2013.svg") {
+      background-position-x: right;
+      background-size: auto #{$icon-size};
+      padding-left: 0.25 * $icon-size;
+      margin-right: 0;
+    }
+  }
+  &pdf {
+    @include content-image("https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg");
+  }
+  &html {
+    @include content-image("https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg");
+  }
+}
+
+.Objectives { @include content-key("Objectives");}
+.Core_Skills {
+  @include content-key("Competences");
+  line-height: 1.5em;
+}
+
+.Human_Languages {
+  & { @include content-key("Languages");}
+  &--English { @include content-key("English: ");}
+  &--Polish { @include content-key("Polish: ");}
+  &--Ukrainian { @include content-key("Ukrainian: ");}
+  &--Russian { @include content-key("Russian: ");}
+  &--JS { @include content-key("JavaScript: ");}
+}
+

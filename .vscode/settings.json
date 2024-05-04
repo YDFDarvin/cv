@@ -1,0 +1,22 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "jest.config.json"
+      ],
+      "url": "https://github.com/YDFDarvin/cv/jest.schema.json",
+    },
+    {
+      "fileMatch": [
+        "Serhii_Andrukh.json"
+      ],
+      "url": "./Serhii_Andrukh.schema.json"
+    },
+    {
+      "fileMatch": [
+        "nodemon.json"
+      ],
+      "url": "https://json.schemastore.org/nodemon"
+    }
+  ]
+}

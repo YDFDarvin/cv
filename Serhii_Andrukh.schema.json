@@ -1,0 +1,421 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://askirmas.github.io/cv/Serhii_Andrukh.schema.json",
+  "properties": {
+    "title": { "const": "Serhii Andrukh" },
+    "description": {
+      "const": "Senior Software Engineer",
+      "title": "The engineer has a solid educational grounding and the ability to apply engineering concepts to create digital solutions",
+      "description": "https://medium.com/shakuro/programmer-vs-developer-vs-engineer-91ef374e5033",
+      "$comment": "Engineer"
+    },
+    "salary": {
+      "title": "NIS/month",
+      "type": "number",
+      "anyOf": [
+        {"minimum": 100000, "description": "✍"},
+        {"minimum": 60000, "description": "🔥"},
+        {"minimum": 50000, "description": "🤟"},
+        {"minimum": 40000, "description": "💪"},
+        {"minimum": 35000, "description": "👍"},
+        {"minimum": 30000, "description": "👌"}
+      ]
+    },
+    "links": {
+      "items": {
+        "$ref": "http://json-schema.org/draft-07/links#"
+      },
+      "properties": {
+        "email": {"const": "mexahik1990@gmail.com", "title": "<img src='https://fonts.gstatic.com/s/i/materialicons/email/v6/24px.svg'/>", "description": "mailto:"},
+        "phone": {"const": "+48-786-636-451", "title": "<img src='https://fonts.gstatic.com/s/i/materialicons/smartphone/v7/24px.svg'/>", "description": "tel:"},
+        "residence": {"default": "Poland/Poznan", "title": "🇮🇱"},
+        "github": {"const": "https://github.com/YDFDarvin", "title": "<img src= 'https://upload.wikimedia.org/wikipedia/commons/9/95/Font_Awesome_5_brands_github.svg' style='height:24px;'/>", "description": "github.com/YDFDarvin"},
+        "linkedin": {"const": "https://www.linkedin.com/in/serhii-andrukh/", "title": "<img src='https://upload.wikimedia.org/wikipedia/commons/8/80/LinkedIn_Logo_2013.svg' style='height:24px;width:30px;object-fit:cover;object-position: 100% 0;'/>", "description": "linkedin.com/in/serhii-andrukh/"}
+      },
+      "type": "object"
+    },
+    "Objective": {
+      "const": "Passionate for systematic and iterative procedures. High educability and deep knowledge of computer science makes me efficient in engineering and architecture that provides a logical flow of knowledge and progress."
+    },
+    "Skills": {
+      "type": "object",
+      "properties": {
+        "Paradigms": {
+          "type": "object",
+          "title": "Programming using these kinds of objects does not make your code 'object-oriented' any more than programming with functions makes your code 'functional'",
+          "description": "https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f ",
+          "properties": {
+            "XP": {
+              "const": true,
+              "description": "http://wiki.c2.com/?ExtremeProgramming",
+              "title": "'Extreme' means these practices get 'turned up' to a much higher 'volume' than on traditional projects"
+            },
+            "TDD": {
+              "const": true,
+              "description": "https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80",
+              "title": "It's 7:15 am and customer support is swamped"
+            },
+            "Coverage": {
+              "const": 100,
+              "description": "https://medium.com/javascript-scene/testing-software-what-is-tdd-459b2145405c",
+              "title": "Use the right kind of test for the job at hand"
+            },
+            "Git Trunk": {
+              "const": true,
+              "description": "https://cloud.google.com/solutions/devops/devops-tech-trunk-based-development",
+              "title": "Trunk-based development is a required practice for continuous integration"
+            },
+            "CI/CD": {
+              "const": true
+            },
+            "ERM": {
+              "const": true,
+              "title": "ER model can be used in the specification of domain-specific ontologies"
+            },
+            "BEM+AtomicCss": {
+              "const": true,
+              "$comment": "Describe as array of methodologies?"
+            },
+            "PBP": {
+              "const": true,
+              "description": "https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9",
+              "title": "Unfortunately, most JavaScript developers don't understand JavaScript's object system, or how to put it to best use"
+            },
+            "Functional": {
+              "const": true,
+              "description": "https://en.wikipedia.org/wiki/Turing_completeness#Non-Turing-complete_languages",
+              "title": "Untyped lambda calculus is Turing-complete, simply typed lambda calculus is not"
+            },
+            "Reactive": {
+              "const": true,
+              "description": "https://www.reactivemanifesto.org/",
+              "title": "We want systems that are Responsive, Resilient, Elastic and Message Driven"
+            },
+            "OOP": {
+              "const": true,
+              "description": "https://medium.com/better-programming/object-oriented-programming-the-trillion-dollar-disaster-92a4b666c7c7",
+              "title": "Object oriented programs are offered as alternatives to correct ones. Edsger W. Dijkstra"
+            }
+          }
+        },
+        "Contracts": {
+          "type": "object",
+          "title": "//TODO"
+        },
+        "Testing": {
+          "type": "array",
+          "items": [
+            {"const": "Jest"},
+            {
+              "const": "Cypress",
+              "description": "https://docs.cypress.io/guides/overview/key-differences.html#Architecture",
+              "title": "Cypress is executed in the same run loop as your application"
+            },
+            {"const": "Puppeteer"},
+            {"const": "chai"}
+          ]
+        },
+        "Full //TODO move to front": {
+          "type": "object",
+          "properties": {
+            "Next.js": {
+              "description": "https://github.com/facebook/create-react-app#popular-alternatives",
+              "title": "Create React App is a great fit for Learning React, Starting new SPA, Creating examples"
+            },
+            "PHP": {
+              "description": "https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/",
+              "title": "I'm cranky. I complain about a lot of things. There's a lot in the world of technology I don't like, and that's really to be expected—programming is a hilariously young discipline, and none of us have the slightest clue what we're doing",
+              "allOf": [
+                {"const": 5},
+                {"const": null}
+              ]
+            }
+          }
+        },
+        "Back": {
+          "type": "object",
+          "properties": {
+            "Node.js": {},
+            "Express": {},
+            "HTTP": {},
+            "WebSocket": {},
+            "RestAPI": {},
+            "CORS": {},
+            "Content Security policy": {},
+            "jwt": {},
+            "Proxy": {},
+            "HyperSchema": {},
+            "SWAG/OpenAPI": {},
+            "HATEOAS": {}
+          }
+        },
+        "Front": {
+          "type": "object",
+          "properties": {
+            "Pure CSS technique": {
+              "description": "https://developers.google.com/web/fundamentals/performance/rendering#the_pixel_pipeline",
+              "title": "Performance is the art of avoiding work, and making any work you do as efficient as possible"
+            },
+            "Strong HTML5": {
+              "description": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
+              "title": "New elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications"
+            },
+            "CSS3": {
+              "description": "grid, flexbox, var"
+            },
+            "SCSS": {},
+            "MaterialUI": {
+
+            },
+            "React": {
+              "description": "github.com/askirmas/render-on-demand"
+            },
+            "WebComponent": {
+
+            },
+            "Redux": {
+              "description": "//TODO You may not need Redux"
+            },
+            "ReactiveX (RxJs)": {
+              "description": "https://codeguida.com/post/1336"
+            },
+            "Chrome": {},
+            "Firefox": {}
+          }
+        },
+        "Storage": {
+          "type": "object",
+          "properties": {
+            "MySQL": {
+              "description": "ACID, Transactions, Routine, Window functions, Join, Normalization, Index"
+            },
+            "IndexedDB": {},
+            "MongoDB": {},
+            "Dexie.js": {}
+          }
+        },
+        "JavaScript": {
+          "type": "object",
+          "properties": {
+            "TypeScript": {
+              "description": "github.com/askirmas/ts-swiss",
+              "title": "//TODO move to contracts"
+            },
+            "ESNext": {},
+            "ES6": {},
+            "JSDoc": {}
+          }
+        },
+        "Utils": {
+          "type": "array",
+          "items": [
+            {"const": "Semantic Versioning"},
+            {"const": "Markdown"},
+            {"const": "mermaidjs"},
+            {"const": "graphviz"},
+            {"const": "Babel"},
+            {"const": "Webpack4"},
+            {"const": "JsonSchema"},
+            {"const": "FetchAPI"},
+            {"const": "Ajax"},
+            {"const": "eslint"},
+            {"const": "stylint"},
+            {"const": "pdf.js"},
+            {"const": "Browser extensions"},
+            {"const": "benchmark.js and own package"},
+            {
+              "const": "bash",
+              "title": "jq, grab, sed, preg, trap, function, array, find, curl, kill"
+            },
+            {"const": "git SVC"},
+            {"const": "ssh"},
+            {"const": "OMeta"},
+            {"const": "Open MPI"},
+            {"const": "OpenCV"}
+          ]
+        },
+        "Passive": {
+          "type": "array",
+          "items": [
+            {"const": "C"},
+            {"const": "C++"},
+            {"const": "Python"},
+            {"const": "Haxe"},
+            {"const": "Docker"},
+            {"const": "GitLab CI"},
+            {"const": "Jenkins"},
+            {"const": "Apache"},
+            {"const": "nginx"},
+            {"const": "OAuth"},
+            {"const": "MacOs"},
+            {"const": "Ubuntu"},
+            {"const": "nwjs"},
+            {"const": "Pixi.js"}
+          ]
+        },
+        "Etc": {
+          "type": "array",
+          "items": [
+            {"const": "Slack"},
+            {"const": "GitHub"},
+            {"const": "GitLab"},
+            {"const": "SourceForge"},
+            {"const": "BitBucket"},
+            {"const": "Jira"},
+            {"const": "Confluence"},
+            {"const": "SourceTree"},
+            {"const": "Tortoise Git"},
+            {"const": "GitKraken"},
+            {"const": "Video and audio processing"}
+          ]
+        }
+      }
+    },
+    "Experience": {
+      "$ref": "#/definitions/Exps"
+    },
+    "Education": {
+      "$ref": "#/definitions/Exps"
+    },
+    "Human Languages": {
+      "allOf": [
+        {"additionalProperties": {"$ref": "#/definitions/eLanguageLevel"}},
+        {
+          "minProperties": 4,
+          "properties": {
+            "English": {"const": "Fluent"},
+            "Polish": {"const": "Basic"},
+            "Ukrainian": {"const": "Mother tongue"},
+            "Russian": {"const": "Mother tongue"}
+          }
+        }
+      ]
+    },
+    "$schema": {
+      "const": "https://github.com/YDFDarvin/cv/Serhii_Andrukh.schema.json"
+    }
+  },
+  "title": "Serhii Andrukh",
+  "description": "Senior Software Engineer",
+  "required": [
+    "title", "description", "salary", "links", "Objective", "Skills", "Experience", "Education", "Human Languages"
+  ],
+  "definitions": {
+    "Exps": {
+      "type": ["array", "object"],
+      "propertyNames": {"pattern": "^20[0-2][\\d]$"},
+      "additionalProperties": {"oneOf": [
+        {"const": false},
+        {"$ref": "#/definitions/ExpRecord"}
+      ]},
+      "items": {"oneOf": [
+        {"const": false},
+        {"$ref": "#/definitions/ExpRecord"}
+      ]}
+    },
+    "ExpRecord": {
+      "type": "object",
+      "properties": {
+        "minimum": {"type": "number"},
+        "maximum": {"type": "number"},
+        "title": {"type": "string"},
+        "description": {"type": "string"},
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": ["string", "object"],
+            "required": ["title", "items"],
+            "properties": {
+              "title": {"type": "string"},
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {"$ref": "#/definitions/Technologies"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "Technologies": {
+      "oneOf": [
+        {"$ref": "#/definitions/Storage"},
+        {"$ref": "#/definitions/PL"},
+        {"$ref": "#/definitions/Interfaces-Contracts"},
+        {"$ref": "#/definitions/Server"},
+        {"$ref": "#/definitions/git"},
+        {"$ref": "#/definitions/Testing"}
+      ]
+    },
+    "Storage": {
+      "oneOf": [
+        {"$ref": "#/definitions/MySQL"},
+        {"$ref": "#/definitions/MongoDB"},
+        {"$ref": "#/definitions/IndexedDB"}
+      ]
+    },
+    "MySQL": {
+      "const": "MySQL",
+      "title": "ACID, Transactions, Routine, Window functions, Join, Normalization, Index"
+    },
+    "MongoDB": {"const": "MongoDB"},
+    "IndexedDB": {"const": "IndexedDB"},
+    "PL": {"oneOf": [
+      {"$ref": "#/definitions/C"},
+      {"$ref": "#/definitions/Cpp"},
+      {"$ref": "#/definitions/bash"},
+      {"$ref": "#/definitions/JS"},
+      {"$ref": "#/definitions/PHP"},
+      {"$ref": "#/definitions/CSS"},
+      {"enum": ["Python", "Haxe"]}
+    ]},
+    "C": {"const": "C"},
+    "Cpp": {
+      "enum": ["C++", "OpenCV", "OpenMPI"]
+    },
+    "bash": {
+      "const": "bash",
+      "title": "jq, grab, sed, preg, trap, function, array, find, curl, kill"
+    },
+    "git": {"const": "git"},
+    "JS": {"oneOf": [
+        {"enum": ["JS", "nwjs", "pixi.js", "<canvas>", "jQuery"]},
+        {"$ref": "#/definitions/JS-DOM"},
+        {"$ref": "#/definitions/React"},
+        {"$ref": "#/definitions/Redux"},
+        {"$ref": "#/definitions/RxJs"},
+        {"$ref": "#/definitions/NodeJs"},
+        {"$ref": "#/definitions/ExpressJs"}
+    ]},
+    "JS-DOM": {"const": "JS DOM"},
+    "React": {"enum": ["React", "Next.js"]},
+    "Redux": {"const": "Redux"},
+    "RxJs": {"const": "RxJs"},
+    "NodeJs": {"const": "NodeJs"},
+    "ExpressJs": {"const": "ExpressJs"},
+    "PHP": {
+      "enum": ["PHP", "WordPress"]
+    },
+    "CSS": {
+      "enum": ["CSS", "CSS3", "PureCss", "SASS", "MaterialUI"]
+    },
+    "Interfaces-Contracts": {
+      "enum": ["TypeScript", "JsonSchema"]
+    },
+    "Server": {
+      "enum": ["Apache", "nginx", "node/http"]
+    },
+    "Testing": {"oneOf": [
+      {"$ref": "#/definitions/Jest"},
+      {"$ref": "#/definitions/Cypress"},
+      {"$ref": "#/definitions/Puppeteer"}
+    ]},
+    "Jest": {"const": "Jest"},
+    "Cypress": {"const": "Cypress"},
+    "Puppeteer": {"const": "Puppeteer"},
+    "eLanguageLevel": {
+      "enum": ["Basic", "Fluent", "Mother tongue"]
+    }
+  }
+}

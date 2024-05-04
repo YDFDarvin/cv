@@ -1,0 +1,39 @@
+@at-root .article {
+  display: flex;
+  flex-direction: column;
+  margin: {
+    bottom: #{$padding};
+  };
+
+  &__title {
+    @include typography.typography("headline6");
+    &--anchor {
+      @extend %link-anchor;
+    }
+    &--external {
+      @extend %link-external;
+    }
+
+    &--range {
+      @include content-key(attr(data-min) " – " attr(data-max) " ");
+    }
+  }
+
+  &__description {
+    @extend %list-mid;
+  }
+
+  &__goals {
+    @extend %list-big;
+  }
+  &__stack {
+    @extend %list-small;
+    border-left: #{$radius} solid #{$back};
+    padding-left: #{$padding};
+    color: #{$passive};
+  }
+  &__subjects {
+    font-style: italic;
+    @extend %list-mid;
+  }
+}

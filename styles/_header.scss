@@ -1,0 +1,29 @@
+@at-root .header {
+  @include typography.typography("headline2");
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: overlay;
+  min-height: 1em;
+  max-height: 1em;
+
+  margin: {
+    top: #{$padding-big};
+    left: #{$padding-big};
+    right: #{$padding-big};
+  }
+  
+  &__title {
+    display: inline-block;
+    margin-right: #{$padding};
+  }
+  &__description {
+    display: inline-block;
+    margin-left: #{$padding};
+    @include typography.typography("headline4");
+  }
+}

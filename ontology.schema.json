@@ -1,0 +1,263 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "definitions": {
+    "XP": {
+      "const": "XP"
+    },
+    "TDD": {
+      "const": "TDD"
+    },
+    "Coverage": {
+      "const": "Coverage"
+    },
+    "SOLID": {
+      "const": "SOLID"
+    },
+    "DRY": {
+      "const": "DRY"
+    },
+    "KISS": {
+      "const": "KISS"
+    },
+    "YAGNI": {
+      "const": "YAGNI"
+    },
+    "semver": {
+      "const": "semver"
+    },
+    "Reactive": {
+      "const": "Reactive"
+    },
+    "Functional": {
+      "const": "Functional"
+    },
+    "Contract": {
+      "const": "Contract"
+    },
+    "PrototypeOriented": {
+      "const": "PrototypeOriented"
+    },
+    "ClassOriented": {
+      "const": "ClassOriented"
+    },
+    "JsonSchema": {
+      "const": "JsonSchema"
+    },
+    "TypeScript": {
+      "const": "TypeScript"
+    },
+    "JSDoc": {
+      "const": "JSDoc"
+    },
+    "JsonHyper": {
+      "const": "JsonHyper"
+    },
+    "OpenAPI": {
+      "const": "OpenAPI"
+    },
+    "Jest": {
+      "const": "Jest"
+    },
+    "Cypress": {
+      "const": "Cypress"
+    },
+    "Puppeteer": {
+      "const": "Puppeteer"
+    },
+    "Html5": {
+      "const": "Html5"
+    },
+    "svg": {
+      "const": "svg"
+    },
+    "WebComponents": {
+      "const": "WebComponents"
+    },
+    "JS_DOM": {
+      "const": "JS_DOM"
+    },
+    "jQuery": {
+      "const": "jQuery"
+    },
+    "canvas": {
+      "const": "canvas"
+    },
+    "pixi_js": {
+      "const": "pixi_js"
+    },
+    "cytoscape_js": {
+      "const": "cytoscape_js"
+    },
+    "charts_js": {
+      "const": "charts_js"
+    },
+    "d3_js": {
+      "const": "d3_js"
+    },
+    "CSS": {
+      "const": "CSS"
+    },
+    "CSS3": {
+      "const": "CSS3"
+    },
+    "PureCss": {
+      "const": "PureCss"
+    },
+    "SASS": {
+      "const": "SASS"
+    },
+    "PostCSS": {
+      "const": "PostCSS"
+    },
+    "BEM": {
+      "const": "BEM"
+    },
+    "AtomicCSS": {
+      "const": "AtomicCSS"
+    },
+    "MySQL": {
+      "const": "MySQL"
+    },
+    "MongoDB": {
+      "const": "MongoDB"
+    },
+    "JS": {
+      "const": "JS"
+    },
+    "Node_js": {
+      "const": "Node_js"
+    },
+    "Fetch": {
+      "const": "Fetch"
+    },
+    "axios_js": {
+      "const": "axios_js"
+    },
+    "Ajax": {
+      "const": "Ajax"
+    },
+    "React": {
+      "const": "React"
+    },
+    "Redux": {
+      "const": "Redux"
+    },
+    "RxJs": {
+      "const": "RxJs"
+    },
+    "Webpack": {
+      "const": "Webpack"
+    },
+    "Babel": {
+      "const": "Babel"
+    },
+    "Next_js": {
+      "const": "Next_js"
+    },
+    "CRA": {
+      "const": "CRA"
+    },
+    "nwjs": {
+      "const": "nwjs"
+    },
+    "Monolith": {
+      "const": "Monolith"
+    },
+    "SOAP": {
+      "const": "SOAP"
+    },
+    "RESTful": {
+      "const": "RESTful"
+    },
+    "Microservices": {
+      "const": "Microservices"
+    },
+    "MVC": {
+      "const": "MVC"
+    },
+    "MVP": {
+      "const": "MVP"
+    },
+    "eslint": {
+      "const": "eslint"
+    },
+    "stylelint": {
+      "const": "stylelint"
+    },
+    "vscode": {
+      "const": "vscode"
+    },
+    "git_hooks": {
+      "const": "git_hooks"
+    },
+    "git_config": {
+      "const": "git_config"
+    },
+    "Node_http": {
+      "const": "Node_http"
+    },
+    "ExpressJs": {
+      "const": "ExpressJs"
+    },
+    "Apache": {
+      "const": "Apache"
+    },
+    "nginx": {
+      "const": "nginx"
+    },
+    "jwt": {
+      "const": "jwt"
+    },
+    "CORS": {
+      "const": "CORS"
+    },
+    "CSP": {
+      "const": "CSP"
+    },
+    "Docker": {
+      "const": "Docker"
+    },
+    "bash": {
+      "const": "bash"
+    },
+    "git": {
+      "const": "git"
+    },
+    "GitLab_CI": {
+      "const": "GitLab_CI"
+    },
+    "Jenkins": {
+      "const": "Jenkins"
+    },
+    "GitHub_Actions": {
+      "const": "GitHub_Actions"
+    },
+    "HockeyApp": {
+      "const": "HockeyApp"
+    },
+    "C": {
+      "const": "C"
+    },
+    "Cpp": {
+      "const": "Cpp"
+    },
+    "OpenCV": {
+      "const": "OpenCV"
+    },
+    "OpenMPI": {
+      "const": "OpenMPI"
+    },
+    "PHP": {
+      "const": "PHP"
+    },
+    "WordPress": {
+      "const": "WordPress"
+    },
+    "Python": {
+      "const": "Python"
+    },
+    "Haxe": {
+      "const": "Haxe"
+    }
+  }
+}

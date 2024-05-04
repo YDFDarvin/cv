@@ -1,0 +1,195 @@
+@use "@material/typography";
+@use "@material/elevation";
+
+@import "quarks";
+
+:root {
+  @include typography.typography("body1");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+code {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.Main {
+  padding: 2 * $padding;
+  overflow: hidden;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: auto minmax(1fr, 40%);
+  grid-template-rows:
+    max-content
+    min-content
+    min-content
+    1fr
+    min-content
+  ;
+  grid-template-areas:
+    'Objectives Objectives'
+    'Experience Core_Skills'
+    'Experience Education'
+    'Experience .'
+    'Experience Human_Languages'
+  ;
+  gap: 2rem;
+
+  &__ { 
+    &header {
+      white-space: nowrap;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+
+      padding: $padding;
+      padding-bottom: 0;
+      
+      position: sticky;
+      top: 0; 
+
+      background-color: white;
+      @include elevation.elevation(4);
+    }
+    
+    &title, &description, &links {
+      padding: $padding;
+    }
+    &links {
+      white-space: initial;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &title {
+      flex: 1;
+      min-width: min-content;
+    }
+  }
+}
+
+.links_group {
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  // display: flex;
+  // flex-direction: column;
+}
+
+.Objectives { grid-area: Objectives;}
+.Human_Languages { grid-area: Human_Languages;}
+.Experience { grid-area: Experience;}
+.Education { grid-area: Education;}
+.Core_Skills { grid-area: Core_Skills;}
+
+.links {
+  text-decoration: inherit;
+  margin: 0.2rem;
+  display: inline-flex;
+  align-items: center;
+ 
+  @include content-key {
+    width: $icon-size;
+    height: $icon-size;
+    line-height: $icon-size;
+    display: inline-block;
+
+    background: {
+      position: left center;
+      repeat: no-repeat;
+      size: contain;
+    }
+    margin-right: $icon-margin;
+  }
+  img {
+    margin-right: $icon-margin;
+  }
+}
+
+.Main__Property,
+.ExpRecords__Property {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  @include content-key {
+    order: #{$order-0-0};
+    flex: 1;
+    min-width: 100%;
+  }
+  @include content-value {
+    display: block;
+    order: #{$order-0-1};
+    min-width: 100% ;
+    flex-grow: 1;
+  }
+}
+
+.ExpRecords__Property {
+  margin-top: 1rem;
+}
+.Term {
+  display: inline-block;
+}
+
+.Human_Languages__Property,
+.Goal {
+  list-style-position: inside;
+  min-width: 100%;
+}
+.Human_Languages__Property {
+  display: list-item;
+  list-style-type: circle;  
+}
+.Goal {
+  display: none;
+  list-style-type: disc;
+}
+
+/** Typography */
+
+.Main__ { 
+  &title {
+    @include typography.typography("headline2");
+  }
+  &description {
+    @include typography.typography("headline4");
+  }
+  &Property {
+    @include content-key {
+      @include typography.typography("headline5");
+    }
+    @include content-value {
+      @include typography.typography("body1");
+    }  
+  }
+}
+
+.ExpRecords__Property {
+  @include content-key { 
+    @include typography.typography("headline6");
+  }
+  @include content-value {
+    @include typography.typography("subtitle1");
+  }
+}
+
+
+.Human_Languages__Property,
+.Term,
+.Goal {
+  @include typography.typography("body1");
+}
+.Term {
+  @include typography.typography("subtitle2");
+}

@@ -1,0 +1,199 @@
+{
+  "$schema": "./schema.json",
+  "title": {
+    "en": "Serhii Andrukh",
+    "uk": "Сергій Андрух",
+    "pl": "Serhii Andrukh",
+    "ru": "Сергей Андрух"
+  },
+  "description": "Senior Full Stack Engineer",
+  "links": {
+    "contacts": {
+      "email": "mexahik1990@gmail.com",
+      "phex": {
+        "en": "e2701c48e2",
+        "ru": "128ce03c64",
+        "uk": "58a2d0028f"
+      },
+      "location": {
+        "en": "pl Poland",
+        "pl": "pl Poland",
+        "uk": "🇺🇦 Chernivtsi"
+      }
+    },
+    "social": {
+      "linkedin": "serhii-andrukh",
+      "github": "YDFDarvin"
+    },
+    "etc": {
+      "html": {
+        "title": "HTML",
+        "href": {
+          "en": "${homepage}en",
+          "pl": "${homepage}pl",
+          "uk": "${homepage}uk",
+          "ru": "${homepage}ru"
+        }
+      },
+      "pdf": {
+        "title": "PDF",
+        "href": {
+          "en": "${homepage}${name}-en.pdf",
+          "he": "${homepage}${name}-pl.pdf",
+          "uk": "${homepage}${name}-uk.pdf",
+          "ru": "${homepage}${name}-ru.pdf"
+        }
+      }
+    }
+  },
+  "items": {
+    "competences": {
+      "$comment": "Calc from definitions?",
+      "title": {
+        "en": "Competences"
+      },
+      "subjects": [
+        "XP",
+        "TDD",
+        "Coverage 100%",
+        "SOLID",
+        "DRY",
+        "KISS",
+        "YAGNI",
+        "OOP-PBP",
+        "RESTful",
+        "Design by contract",
+        "Pure-CSS",
+        "BEM"
+      ],
+      "stack": [
+        "JsonSchema",
+        "TypeScript",
+        "bash",
+        "git",
+        "Jest",
+        "Cypress",
+        "MySQL",
+        "MongoDB",
+        "JavaScript",
+        "Node",
+        "ExpressJs",
+        "React",
+        "Next.js",
+        "HTML5",
+        "CSS3",
+        "Sass"
+      ]
+    },
+    "languages": {
+      "title": {
+        "en": "Languages"
+      },
+      "items": [
+        {
+          "title": "English: Fluent",
+          "href": "${homepage}en"
+        },
+        {
+          "title": "Hebrew: Basic",
+          "href": "${homepage}pl"
+        },
+        {
+          "title": "Ukrainian: Mother tongue",
+          "href": "${homepage}uk"
+        },
+        {
+          "title": "Russian: Mother tongue",
+          "href": "${homepage}ru"
+        },
+        {
+          "title": "JavaScript: Native speaker",
+          "href": "${homepage}cv.json"
+        }
+      ]
+    }  
+  },
+  "definitions": {
+    "subjects": {
+      "Software and Systems Engineering": {"group": "eng"},
+      "XP": {"group": "eng"},
+      "KISS": {"group": "eng"},
+      "YAGNI": {"group": "eng"},
+      "DRY": {"group": "eng"},
+      "RESTful": {"group": "contracts"},
+      "Design by contract": {"group": "contracts"},
+      "SOLID": {"group": "oop"},
+      "OOP-PBP": {"group": "oop"},      
+      "Coverage 100%": {"group": "test"},
+      "TDD": {"group": "test"},
+      "Databases": {"group": "db"},
+      "BEM": { "group": "css" },
+      "Pure-CSS": { "group": "css" },
+      "Geometry": {"group": "css"},
+      "Programming language theory": {"group": "trpl"},
+      "Neural networks": {"group": "neural"},
+      "Parallel programming": {"group": "parprog"},
+      "Discrete mathematics": {"group": "c"},
+      "Algorithms and Data structures": {"group": "c"}
+    },
+    "stack": {
+      "PHP": {
+        "favor": -1,
+        "group": "server"
+      },
+      "Apache": {
+        "favor": -1,
+        "group": "server"
+      },
+      "WordPress": {
+        "favor": -1,
+        "group": "server"
+      },
+      "Monolith": {
+        "favor": -1,
+        "group": "eng"
+      },
+      "JsonSchema": {"group": "contracts"},
+      "TypeScript": {"group": "contracts"},
+      "OpenAPI": {"group": "contracts"},
+      "Protobuf": {"group": "contracts"},
+      "RESTful": {"group": "contracts"},
+      "C++": {"group": "oop"},
+      "JavaScript": {"group": "oop"},
+      "ES6": {"group": "oop"},
+      "Cypress": {"group": "test"},
+      "Puppeteer": {"group": "test"},
+      "Jest": {"group": "test"},
+      "MySQL": {"group": "db"},
+      "MongoDB": {"group": "db"},
+      "PostgreSQL": {"group": "db"},
+      "typeorm": {"group": "db"},
+      "Node": {"group": "cli"},
+      "bash": {"group": "cli"},
+      "git": {"group": "cli"},
+      "ExpressJs": {"group": "server"},
+      "typedi": {"group": "server"},
+      "nginx": {"group": "server"},
+      "CSS3": {"group": "css"},
+      "Sass": {"group": "css"},
+      "React": {"group": "react"},
+      "Redux": {"group": "react"},
+      "Next.js": {"group": "react"},
+      "Webpack": {"group": "react"},
+      "RxJs": {"group": "react"},
+      "Python": {"group": "trpl"},
+      "Haxe": {"group": "trpl"},
+      "HTML5": {"group": "html"},
+      "<canvas>": {"group": "html"},
+      "pixi.js": {"group": "html"},
+      "jQuery": {"group": "html"},
+      "JS DOM": {"group": "html"},
+      "OpenCV": {"group": "neural"},
+      "OpenMPI": {"group": "parprog"},
+      "C": {"group": "c"},
+      "Compilers": {"group": "trpl"},
+      "GitLab CI": {"group": "devops"},
+      "Docker": {"group": "devops"}
+    }
+  }  
+}
