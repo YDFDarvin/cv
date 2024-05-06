@@ -28,7 +28,7 @@
       "properties": {
         "email": {"const": "mexahik1990@gmail.com", "title": "<img src='https://fonts.gstatic.com/s/i/materialicons/email/v6/24px.svg'/>", "description": "mailto:"},
         "phone": {"const": "+48-786-636-451", "title": "<img src='https://fonts.gstatic.com/s/i/materialicons/smartphone/v7/24px.svg'/>", "description": "tel:"},
-        "residence": {"default": "Poland/Poznan", "title": "🇮🇱"},
+        "residence": {"default": "Poland/Poznan", "title": "pl"},
         "github": {"const": "https://github.com/YDFDarvin", "title": "<img src= 'https://upload.wikimedia.org/wikipedia/commons/9/95/Font_Awesome_5_brands_github.svg' style='height:24px;'/>", "description": "github.com/YDFDarvin"},
         "linkedin": {"const": "https://www.linkedin.com/in/serhii-andrukh/", "title": "<img src='https://upload.wikimedia.org/wikipedia/commons/8/80/LinkedIn_Logo_2013.svg' style='height:24px;width:30px;object-fit:cover;object-position: 100% 0;'/>", "description": "linkedin.com/in/serhii-andrukh/"}
       },
